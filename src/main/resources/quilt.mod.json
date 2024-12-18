@@ -1,0 +1,39 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "dev.cammiescorner",
+		"id": "eggd",
+		"version": "${version}",
+		"metadata": {
+			"name": "Egg'd!",
+			"description": "The egg meta is back, and more annoying than ever!",
+			"contributors": {
+				"Cammie": "Owner"
+			},
+			"icon": "assets/eggd/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "dev.cammiescorner.eggd.Eggd",
+			"cardinal-components": "dev.cammiescorner.eggd.common.registry.EggdComponents"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.17.0-"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=4.0.0-"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.19.2"
+			}
+		]
+	},
+	"mixin": "eggd.mixins.json",
+	"cardinal-components": [
+		"eggd:egg"
+	]
+}

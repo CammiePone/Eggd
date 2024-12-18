@@ -1,0 +1,8 @@
+{
+  "egg_splat": {
+    "subtitle": "subtitles.eggd.egg_splat",
+    "sounds": [
+      "eggd:egg_splat"
+    ]
+  }
+}
